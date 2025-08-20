@@ -55,7 +55,7 @@ This code is built on **SageMath** and is not compatible with a standard Python 
 
 1. **Launch JupyterLab**
 
-    You can now run teh example notebook:
+    You can now run the example notebook:
     
     ```bash
     jupyter lab
@@ -80,12 +80,12 @@ To uninstall the package, proceed as follows:
     ```
 
 1. **Unregister the Jupyter kernel**
-    With package and kernel gone, you can safely remove the Conda environment itself.
     ```bash
     jupyter kernelspec uninstall nested-hilbert-env
     ```
 
 1. **Deactivate the environment and remove it**
+    With package and kernel gone, you can safely remove the Conda environment itself.
     ```bash
     conda deactivate
     conda env remove -n nested-hilbert-env
