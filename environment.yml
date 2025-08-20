@@ -1,0 +1,14 @@
+name: nested-hilbert-env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python
+  - sagemath
+
+  - pip
+  - uv
+
+  - jupyterlab

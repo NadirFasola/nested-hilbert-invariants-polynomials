@@ -13,20 +13,50 @@ The core of this project is a computational test of a conjecture that relates a 
 
 This code is built on **SageMath** and is not compatible with a standard Python interpreter.
 
-1.  **Install SageMath:** Follow the installation instructions at [sagemath.org](https://www.sagemath.org/). Using SageMath within a conda environment is often a good approach.
+### Setup and Installation
 
-2.  **Clone the repository:**
+1. **Clone the Repository**
+    
     ```bash
-    git clone [https://github.com/NadirFasola/nested-hilbert-invariants-polynomials.git](hhttps://github.com/NadirFasola/nested-hilbert-invariants-polynomials.git)
-    cd nested-hilbert-invariants
+    git clone https://github.com/NadirFasola/nested-hilbert-invariants-polynomials.git](https://github.com/NadirFasola/nested-hilbert-invariants-polynomials.git)
+    cd nested-hilbert-invariants-polynomials
     ```
 
-3.  **Launch the Jupyter Notebook in Sage:**
-    From your terminal, run:
+1. **Create the conda environment**
+    
+    Ensure you have Conda or Mamba installed. Then, create the environment from the provided file:
+    
     ```bash
-    sage -n jupyter
+    # Using Mamba (recommended, much faster)...
+    mamba env create -f environment.yml
+
+    # ...or using Conda
+    conda env create -f environment.yml
     ```
-    This will open a Jupyter interface in your browser. Navigate to `notebooks/demonstration.ipynb` to run the examples.
+
+1. **Activate the environment**
+    
+    ```bash
+    conda activate nested-hilbert-env
+    ```
+
+1. **Install the Project Package**
+
+    With the environment activated, install the 'nested-hilbert-invariants' package in editable mode using UV:
+
+    ```bash
+    uv pip install -e
+    ```
+
+1. **Launch JupyterLab**
+
+    You can now run teh example notebook:
+    
+    ```bash
+    jupyter lab
+    ```
+    
+    Navigate to `notebooks/example.ipynb`.
 
 ## License
 
