@@ -6,9 +6,10 @@ channels:
 
 dependencies:
   - python
-  - sagemath
+  - sage
 
   - pip
   - uv
 
   - jupyterlab
+  - ipykernel

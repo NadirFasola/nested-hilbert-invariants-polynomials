@@ -40,6 +40,11 @@ This code is built on **SageMath** and is not compatible with a standard Python 
     conda activate nested-hilbert-env
     ```
 
+1. **Register a Kernel with Jupyter**
+    ```bash
+    python -m ipykernel install --user --name=nested-hilbert-env --display-name="SageMath (nested-hilbert-env)"
+    ```
+
 1. **Install the Project Package**
 
     With the environment activated, install the 'nested-hilbert-invariants' package in editable mode using UV:
@@ -57,6 +62,41 @@ This code is built on **SageMath** and is not compatible with a standard Python 
     ```
     
     Navigate to `notebooks/example.ipynb`.
+
+## Uninstall
+
+To uninstall the package, proceed as follows:
+
+1. **Activate the environment**
+    First, you can uninstall the package from your Conda environment.
+    ```bash
+    conda activate nested-hilbert-env
+    ```
+
+1. **Uninstall the package**
+    You can now remove the kernel you created.
+    ```bash
+    pip uninstall nested-hilbert-invariants
+    ```
+
+1. **Unregister the Jupyter kernel**
+    With package and kernel gone, you can safely remove the Conda environment itself.
+    ```bash
+    jupyter kernelspec uninstall nested-hilbert-env
+    ```
+
+1. **Deactivate the environment and remove it**
+    ```bash
+    conda deactivate
+    conda env remove -n nested-hilbert-env
+    ```
+
+1. **Remove the project folder**
+    Finally, you can delete your project directory from your filesystem (be careful with these commands!).
+    ```bash
+    cd ..
+    rm -rf nested-hilbert-invariants-polynomials
+    ```
 
 ## License
 
